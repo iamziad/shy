@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O2 -Wno-usedparameters
+CFLAGS = -Wall -Wextra -Wno-unused-parameter
 TARGET = zozsh
 SRC = src/main.c
 
