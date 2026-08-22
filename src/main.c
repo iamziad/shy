@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         size_t new_line = strcspn(cmd, "\n");
         cmd[new_line] = 0;
 
-        if (strncmp(cmd, "exit", 4) == 0) {
+        if (strncmp(cmd, "exit ", 5) == 0) {
             if (strlen(cmd) == 4)
                 exit(0);
 
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
                 fprintf(stderr, "exit: %s: invalid integer\n", arg);
         }
 
-        else if (strncmp(cmd, "echo", 4) == 0) {
+        else if (strncmp(cmd, "echo ", 5) == 0) {
             char *arg = cmd + 5;
             printf("%s\n", arg);
         }
