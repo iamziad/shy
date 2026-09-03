@@ -1,1 +1,1 @@
-* zozsh
+* shy - A simple but powerful unix-like shell
